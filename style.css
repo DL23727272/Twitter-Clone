@@ -65,6 +65,13 @@ input{
     margin: 0 20px;
     text-decoration: none;
     font-size: 15px;
+    color: #adb1b4;
+}
+.footer-links a:hover {
+    margin: 0 20px;
+    text-decoration: underline;
+    font-size: 15px;
+    color: #adb1b4;
 }
 footer{
     padding-top: 10% ;
