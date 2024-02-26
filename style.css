@@ -1,6 +1,19 @@
 *{
     border-radius: 1px solid black;
 }
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(64, 64, 64); 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* color of the scrollbar track */
+}
+
 .btns{
     width: 55%;
     margin: 3px;
@@ -41,7 +54,6 @@ input{
     background-color: black;
     color: white; 
 }
-
 .custom-close-btn {
     color: white;
 }
@@ -95,9 +107,4 @@ footer{
         margin-bottom: 15px;
         box-sizing: border-box;
     }
-    .DL {
-        background-color: red;
-        margin-left: 90%;
-    }
-   
 }
