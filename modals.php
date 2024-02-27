@@ -1,0 +1,130 @@
+ <!---LOG IN MODAL--->
+ <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content " style="background-color:black">
+                <div class="modal-header custom-modal ">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"  style="color: #ffffff;"></i></button> 
+                <div class="col-sm">
+                    <img src="images/x_Logo.png" alt="" class="logo-img">
+                </div>
+                </div>
+                <div class="container align-items-center justify-content-center DL" >
+                    <div class="row ">
+                    <div class="col-sm content">
+                        <div class="w-100"></div>
+                        <br>
+                        <div class="col-sm">
+                            <h1 class="font-weight-bold text-light"> Sign in to X</h1>
+                        </div>
+                        <br>
+                        <div class="col-sm">
+                            <button class="btn btn-light btns " style=" border-radius: 30px ;"><i class="fa-brands fa-google"></i> Sign up with Google</button>
+                        </div>
+                        <div class="col-sm">
+                            <button class="btn btn-light btns " style=" border-radius: 30px ;"><i class="fa-brands fa-apple"></i> Sign up with Apple</button>
+                        </div>
+                        <div class="col-sm line" >
+                            <div class="row">
+                                <div class="col">
+                                <hr class="dash" style="width: 80%;  color: white;"> 
+                                </div>
+                                <div class="col">
+                                <p class="text-light" style="display: inline-block; margin-left: -30%; margin-right: 0;">
+                                    or
+                                </p> 
+                                </div>
+                                <div class="col">
+                                <hr style="width: 85%; margin-left: -130%; color: white;">
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form" action="#" method="post">
+                            <div class="col-sm">
+                                <input class="custom-input" placeholder="Phone, email, or username" name="username" id="username">
+                            </div> 
+                            <br>
+                            <br>
+                            <div class="col-sm">
+                                <button class="btn btn-light btns" style="border-radius: 30px;" onclick="Login()" type="button">Next</button>
+                            </div>
+                        </form>
+                        <br>
+                        <div class="col-sm">
+                            <button class="btn btn-outline-light btns " style=" border-radius: 30px ;">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logIn">Forgot password</a>
+                            </button>
+                        </div>
+                        <br>
+                        <div class="col-sm">
+                            <p style="font-size: 11px; color: rgb(113, 118, 123);">
+                                Don't have an account? 
+                                <a href="#" style="text-overflow: unset; color: rgb(29, 155, 240); text-decoration: none;">
+                                    Sign up
+                                </a> 
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End modal-->
+
+     <!---Sign IN MODAL--->
+    <div class="modal fade" id="passWord" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content " style="background-color:black">
+                <div class="modal-header custom-modal ">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"  style="color: #ffffff;"></i></button> 
+                <div class="col-sm">
+                    <img src="images/x_Logo.png" alt="" class="logo-img">
+                </div>
+                </div>
+                <div class="container align-items-center justify-content-center DL" >
+                    <div class="row ">
+                    <div class="col-sm content">
+                        <div class="w-100"></div>
+                        <br>
+                        <div class="col-sm">
+                            <h1 class="font-weight-bold text-light" style="font-size: 20px;"> Enter your password</h1>
+                        </div>
+                        <br>
+                        <form class="form" action="#" method="post">
+                            <div class="col-sm">
+                                <input class="custom-input" placeholder="username" name="username" id="usernameSecondModal" disabled >
+                            </div> 
+                            <br>
+                            <div class="col-sm">
+                                <input type="password" class="custom-input" placeholder="Password" name="password" id="password"><br>
+                                <a href="#" style="text-overflow: unset; color: rgb(29, 155, 240); text-decoration: none; font-size: 13px;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+                                    Forgot password?
+                                </a>
+                            </div>
+                            <br>
+                            <div class="col-sm">
+                                <button class="btn btn-light btns" style="border-radius: 30px;" onclick="Signin()">Log in</button>
+                            </div>
+                        </form>
+                        <br>
+                        <br>
+                        <div class="col-sm">
+                            <p style="font-size: 11px; color: rgb(113, 118, 123);">
+                                Don't have an account? 
+                                <a href="#" style="text-overflow: unset; color: rgb(29, 155, 240); text-decoration: none;">
+                                    Sign up
+                                </a> 
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End modal-->
+    

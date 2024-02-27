@@ -24,78 +24,9 @@
 </head>
 <body style="background: black;">
 
-    <!---LOG IN MODAL--->
-    <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content " style="background-color:black">
-                <div class="modal-header custom-modal ">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"  style="color: #ffffff;"></i></button> 
-                <div class="col-sm">
-                    <img src="images/x_Logo.png" alt="" class="logo-img">
-                </div>
-                </div>
-                <div class="container align-items-center justify-content-center DL" style="">
-                    <div class="row ">
-                    <div class="col-sm content">
-                        <div class="w-100"></div>
-                        <br>
-                        <div class="col-sm">
-                            <h1 class="font-weight-bold text-light"> Sign in to X</h1>
-                        </div>
-                        <br>
-                        <div class="col-sm">
-                            <button class="btn btn-light btns " style=" border-radius: 30px ;"><i class="fa-brands fa-google"></i> Sign up with Google</button>
-                        </div>
-                        <div class="col-sm">
-                            <button class="btn btn-light btns " style=" border-radius: 30px ;"><i class="fa-brands fa-apple"></i> Sign up with Apple</button>
-                        </div>
-                        <div class="col-sm line" >
-                            <div class="row">
-                                <div class="col">
-                                <hr class="dash" style="width: 80%;  color: white;"> 
-                                </div>
-                                <div class="col">
-                                <p class="text-light" style="display: inline-block; margin-left: -30%; margin-right: 0;">
-                                    or
-                                </p> 
-                                </div>
-                                <div class="col">
-                                <hr style="width: 85%; margin-left: -130%; color: white;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <input class="custom-input"  placeholder="Phone, email, or username"></input>
-                        </div> 
-                        <br>
-                        <div class="col-sm">
-                            <button class="btn btn-light btns " style=" border-radius: 30px ;">Next</button>
-                        </div>
-                        <br>
-                        <div class="col-sm">
-                            <button class="btn btn-outline-light btns " style=" border-radius: 30px ;">
-                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logIn">Forgot password</a>
-                            </button>
-                        </div>
-                        <br>
-                        <div class="col-sm">
-                            <p style="font-size: 11px; color: rgb(113, 118, 123);">
-                                Don't have an account? 
-                                <a href="#" style="text-overflow: unset; color: rgb(29, 155, 240); text-decoration: none;">
-                                    Sign up
-                                </a> 
-                            </p>
-                        </div>
-                        
-                    </div>
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End modal-->
+   <?php include ('modals.php')?>
 
+    <!---Content-->
     <div class="container align-items-center justify-content-center" style="margin: 11% 0 0 10%;">
         <div class="row">
 
@@ -137,7 +68,7 @@
             <div class="col-sm">
                 <button class="btn btn-primary btns " style=" border-radius: 30px ;">Create account</button>
             </div> 
-            <div class="col-sm">
+            <div class="col-sm text-link">
                 <p style="font-size: 11px; color: rgb(113, 118, 123);">
                     By signing up, you agree to the 
                     <a href="#" style="text-overflow: unset; color: rgb(29, 155, 240); text-decoration: none;">
@@ -196,5 +127,57 @@
         </div>
         <!-- <p class="copyright mt-3">© 2024 X Corp.</p> -->
     </footer>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+   alertify.set('notifier', 'position', 'top-right');
+   alertify.success('Hello');
+
+   function Login() {
+        console.log('Login function called');
+        var username = document.getElementById("username").value;
+        var usernameInputSecondModal = document.getElementById("usernameSecondModal");
+
+        if (username == "DL" ) {
+            usernameInputSecondModal.value = username;
+            usernameInputSecondModal.placeholder = username;
+            $('#passWord').modal('show');
+            $('#logIn').modal('hide');
+            
+        } 
+        else if (username == "" ) {
+            alertify.error('Fill up the Username field!') ;
+        } 
+        else {
+            alertify.error('Wrong Username');
+        }
+    }
+    function Signin() {
+        var password = document.getElementById("password").value;
+        var username = document.getElementById("username").value;
+
+        if (username == "DL" && password == "123") {
+            alertify.success('You are logged in as DL!');
+            window.open ('calculator.html');  
+        } 
+        else if (username == "" && password == "") {
+            alertify.error('Empty fields! Please fill all the fields.') ;
+        } 
+        else if (username == "") {
+            alertify.error('Empty username');
+        } 
+        else if (password == "") {
+            alertify.error('Empty password');
+        } 
+        else {
+            alertify.error('Wrong Username or Password');
+        }
+    }
+    
+
+
+</script>
 </body>
 </html>
