@@ -25,7 +25,7 @@
 <body style="background: black;">
 
    <?php include ('modals.php')?>
-
+   <div id="modalContainer"></div>
     <!---Content-->
     <div class="container align-items-center justify-content-center" style="margin: 11% 0 0 10%;">
         <div class="row">
@@ -127,7 +127,9 @@
     <script>
         alertify.set('notifier', 'position', 'top-right');
         alertify.success('Hello');
-
+        $(function() {
+            $('#modalContainer').load('modals.html');
+        });
         function Login() {
                 console.log('Login function called');
                 var username = document.getElementById("username").value;
