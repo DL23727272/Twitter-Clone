@@ -60,6 +60,7 @@ input{
 .happening-now-title {
     font-size: 70px;
     font-weight: 700;
+    margin: -10% 0 0 0;
 }
 .footer-links a {
     margin: 0 20px;
@@ -82,11 +83,12 @@ footer{
         height: auto;  
     }
     .happening-now-title {
-        font-size: 45px;  
+        font-size: 40px;  
         font-weight: 700;
+        padding: 10% 5% 0 0;
     }
     .content{
-        padding: 10%;
+        padding: 10% 0 0 0;
     }
     .btns{
         width: 80%;
@@ -113,5 +115,9 @@ footer{
         border-radius: 5px;
         margin-bottom: 15px;
         box-sizing: border-box;
+    }
+    .DL{
+        background-color: transparent;
+        overflow: hidden; 
     }
 }
