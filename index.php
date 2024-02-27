@@ -29,11 +29,9 @@
     <!---Content-->
     <div class="container align-items-center justify-content-center" style="margin: 11% 0 0 10%;">
         <div class="row">
-
-            <div class="col-sm">
-                <img src="images/x_Logo.png" alt="" class="logo-img">
-            </div>
-
+          <div class="col-sm">
+            <img src="images/x_Logo.png" alt="" class="logo-img">
+          </div>
           <div class="col-sm content">
             <div class="col-sm">
                 <h1 class="font-weight-bold text-light happening-now-title">Happening now</h1>
@@ -58,7 +56,7 @@
                     <div class="col">
                       <p class="text-light" style="display: inline-block; margin-left: -30%; margin-right: 0;">
                         or
-                    </p> 
+                      </p> 
                     </div>
                     <div class="col">
                       <hr style="width: 85%; margin-left: -130%; color: white;">
@@ -95,12 +93,7 @@
                     </button>
                 </a>
             </div>
-            
           </div>
-         
-         
-        
-         
         </div>
        
       </div> 
@@ -128,56 +121,53 @@
         <!-- <p class="copyright mt-3">© 2024 X Corp.</p> -->
     </footer>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-   alertify.set('notifier', 'position', 'top-right');
-   alertify.success('Hello');
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        alertify.set('notifier', 'position', 'top-right');
+        alertify.success('Hello');
 
-   function Login() {
-        console.log('Login function called');
-        var username = document.getElementById("username").value;
-        var usernameInputSecondModal = document.getElementById("usernameSecondModal");
+        function Login() {
+                console.log('Login function called');
+                var username = document.getElementById("username").value;
+                var usernameInputSecondModal = document.getElementById("usernameSecondModal");
 
-        if (username == "DL" ) {
-            usernameInputSecondModal.value = username;
-            usernameInputSecondModal.placeholder = username;
-            $('#passWord').modal('show');
-            $('#logIn').modal('hide');
-            
-        } 
-        else if (username == "" ) {
-            alertify.error('Fill up the Username field!') ;
-        } 
-        else {
-            alertify.error('Wrong Username');
-        }
-    }
-    function Signin() {
-        var password = document.getElementById("password").value;
-        var username = document.getElementById("username").value;
+                if (username == "DL" ) {
+                    usernameInputSecondModal.value = username;
+                    usernameInputSecondModal.placeholder = username;
+                    $('#passWord').modal('show');
+                    $('#logIn').modal('hide');
+                    
+                } 
+                else if (username == "" ) {
+                    alertify.error('Fill up the Username field!') ;
+                } 
+                else {
+                    alertify.error('Wrong Username');
+                }
+            }
+            function Signin() {
+                var password = document.getElementById("password").value;
+                var username = document.getElementById("username").value;
 
-        if (username == "DL" && password == "123") {
-            alertify.success('You are logged in as DL!');
-            window.open ('calculator.html');  
-        } 
-        else if (username == "" && password == "") {
-            alertify.error('Empty fields! Please fill all the fields.') ;
-        } 
-        else if (username == "") {
-            alertify.error('Empty username');
-        } 
-        else if (password == "") {
-            alertify.error('Empty password');
-        } 
-        else {
-            alertify.error('Wrong Username or Password');
-        }
-    }
-    
-
-
-</script>
+                if (username == "DL" && password == "123") {
+                    alertify.success('You are logged in as DL!');
+                    window.open ('calculator.html');  
+                } 
+                else if (username == "" && password == "") {
+                    alertify.error('Empty fields! Please fill all the fields.') ;
+                } 
+                else if (username == "") {
+                    alertify.error('Empty username');
+                } 
+                else if (password == "") {
+                    alertify.error('Empty password');
+                } 
+                else {
+                    alertify.error('Wrong Username or Password');
+                }
+            }
+    </script>
 </body>
 </html>

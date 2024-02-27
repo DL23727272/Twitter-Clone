@@ -4,16 +4,13 @@
 ::-webkit-scrollbar {
     width: 12px; 
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: rgb(64, 64, 64); 
     border-radius: 4px;
 }
-
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* color of the scrollbar track */
+    background-color: #f1f1f1; 
 }
-
 .btns{
     width: 55%;
     margin: 3px;
@@ -22,7 +19,6 @@
     width: 350px;
     height: 350px;
 }
-
 input{
     height: 50px;
     width: 55%;
@@ -37,7 +33,6 @@ input{
     margin-bottom: 15px;
     box-sizing: border-box;
 }
-
 .custom-input:focus {
     outline: none;
     border-color: #3498db;
