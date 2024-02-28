@@ -148,27 +148,26 @@
                     alertify.error('Wrong Username');
                 }
             }
-            function Signin() {
-                var password = document.getElementById("password").value;
-                var username = document.getElementById("username").value;
+        function Signin() {
+            var password = document.getElementById("password").value;
+            var username = document.getElementById("username").value;
 
-                if (username == "DL" && password == "123") {
-                    alertify.success('You are logged in as DL!');
-                    window.open ('calculator.html');  
-                } 
-                else if (username == "" && password == "") {
-                    alertify.error('Empty fields! Please fill all the fields.') ;
-                } 
-                else if (username == "") {
-                    alertify.error('Empty username');
-                } 
-                else if (password == "") {
-                    alertify.error('Empty password');
-                } 
-                else {
-                    alertify.error('Wrong Username or Password');
-                }
+            if (username == "DL" && password == "123") {
+                window.open ('calculator.html');  
+            } 
+            else if (username == "" && password == "") {
+                alertify.error('Empty fields! Please fill all the fields.') ;
+            } 
+            else if (username == "") {
+                alertify.error('Empty username');
+            } 
+            else if (password == "") {
+                alertify.error('Empty password');
+            } 
+            else {
+                alertify.error('Wrong Username or Password');
             }
+        }
     </script>
 </body>
 </html>
