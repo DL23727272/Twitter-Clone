@@ -130,42 +130,38 @@
             $('#modalContainer').load('modals.html');
         });
         function Login() {
-                console.log('Login function called');
-                var username = document.getElementById("username").value;
-                var usernameInputSecondModal = document.getElementById("usernameSecondModal");
-
-                if (username == "DL" ) {
-                    usernameInputSecondModal.value = username;
-                    usernameInputSecondModal.placeholder = username;
-                    $('#passWord').modal('show');
-                    $('#logIn').modal('hide');
-                    
-                } 
-                else if (username == "" ) {
-                    alertify.error('Fill up the Username field!') ;
-                } 
-                else {
-                    alertify.error('Wrong Username');
-                }
-            }
-        function Signin() {
-            var password = document.getElementById("password").value;
             var username = document.getElementById("username").value;
+            var usernameInputSecondModal = document.getElementById("usernameSecondModal");
+
+            if (username == "DL") {
+                usernameInputSecondModal.value = username;
+                usernameInputSecondModal.placeholder = username;
+                $('#passWord').modal('show');
+                $('#logIn').modal('hide');
+            } else if (username == "") {
+                alertify.error('Fill up the Username field!');
+                document.getElementById('error1').innerHTML = 'Username is required';
+            } else {
+                alertify.error('Wrong Username');
+                document.getElementById('error1').innerHTML = 'Wrong Username';
+            }
+        }
+
+        //for second modal sakit neto sa ulo oo
+        function Signin() {
+            var password = document.getElementById("passwordSecondModal").value;
+            var username = document.getElementById("usernameSecondModal").value;
 
             if (username == "DL" && password == "123") {
-                window.open ('calculator.html');  
-            } 
-            else if (username == "" && password == "") {
-                alertify.error('Empty fields! Please fill all the fields.') ;
-            } 
-            else if (username == "") {
-                alertify.error('Empty username');
-            } 
-            else if (password == "") {
+                alertify.success('Success');
+            } else if (username == "" && password == "") {
+                alertify.error('Empty fields! Please fill all the fields.');
+            } else if (password == "") {
                 alertify.error('Empty password');
-            } 
-            else {
-                alertify.error('Wrong Username or Password');
+                document.getElementById('error3').innerHTML = 'Empty password';
+            } else {
+                alertify.error('Wrong password');
+                document.getElementById('error3').innerHTML = 'Wrong password';
             }
         }
     </script>

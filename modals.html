@@ -1,5 +1,5 @@
  <!---LOG IN MODAL--->
- <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
+    <div class="modal fade" id="logIn" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content " style="background-color:black">
                 <div class="modal-header custom-modal ">
@@ -42,6 +42,7 @@
                             <div class="col-sm">
                                 <input class="custom-input" placeholder="Phone, email, or username" name="username" id="username">
                             </div> 
+                            <p id="error1" style="color: white;"></p>
                             <br>
                             <br>
                             <div class="col-sm">
@@ -71,9 +72,9 @@
             </div>
         </div>
     </div>
-    <!--End modal-->
+<!--End modal-->
 
-     <!---Sign IN MODAL--->
+<!---Sign IN MODAL--->
     <div class="modal fade" id="passWord" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content " style="background-color:black">
@@ -94,18 +95,19 @@
                         <br>
                         <form class="form" action="#" method="post">
                             <div class="col-sm">
-                                <input class="custom-input" placeholder="username" name="username" id="usernameSecondModal" disabled >
+                                <input class="custom-input" placeholder="username" name="username" id="usernameSecondModal" disabled  style=" color: #adb1b4;">
                             </div> 
                             <br>
                             <div class="col-sm">
-                                <input type="password" class="custom-input" placeholder="Password" name="password" id="password"><br>
+                                <input type="password" class="custom-input" placeholder="Password" name="password" id="passwordSecondModal"><br>
+                                <p id="error3" style="color: white;"></p>
                                 <a href="#" style="text-overflow: unset; color: rgb(29, 155, 240); text-decoration: none; font-size: 13px;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
                                     Forgot password?
                                 </a>
                             </div>
                             <br>
                             <div class="col-sm">
-                                <button class="btn btn-light btns" style="border-radius: 30px;" onclick="Signin()">Log in</button>
+                                <button type="button" class="btn btn-light btns" style="border-radius: 30px;" onclick="Signin()">Log in</button>
                             </div>
                         </form>
                         <br>
@@ -126,5 +128,5 @@
             </div>
         </div>
     </div>
-    <!--End modal-->
+<!--End modal-->
     
