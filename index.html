@@ -154,6 +154,7 @@
 
             if (username == "DL" && password == "123") {
                 alertify.success('Success');
+                document.getElementById('error3').innerHTML = 'Success';
             } else if (username == "" && password == "") {
                 alertify.error('Empty fields! Please fill all the fields.');
             } else if (password == "") {
