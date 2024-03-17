@@ -64,14 +64,13 @@ input{
     color: #adb1b4;
 }
 .footer-links a:hover {
-    margin: 0 20px;
     text-decoration: underline;
     font-size: 15px;
     color: #adb1b4;
 }
 footer{
     padding-top: 10% ;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 @media only screen and (max-width: 900px) {
     .logo-img {
