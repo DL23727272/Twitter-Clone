@@ -74,7 +74,7 @@ footer{
 }
 @media only screen and (max-width: 900px) {
     .logo-img {
-        width: 50px; 
+        width: 80px; 
         height: auto;  
     }
     .happening-now-title {
@@ -83,7 +83,7 @@ footer{
         padding: 10% 5% 0 0;
     }
     .content{
-        padding: 10% 0 0 0;
+        padding: 0 0 0 0;
     }
     .btns{
         width: 80%;
